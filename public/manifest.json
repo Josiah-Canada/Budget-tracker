@@ -46,7 +46,7 @@
     {
       "theme_color": "#FFFFFF",
       "background_color": "#FFFFFF",
-      "start_url": "Budget Tracker",
+      "start_url": "/Budget-tracker/",
       "display": "landscape"
     }
   ]
