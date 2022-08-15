@@ -46,9 +46,9 @@ request.onupgradeneeded = function(event) {
   }
 
   function uploadBudget() {
-    const transaction = db.transaction(['new_budget'], 'readwrite');
+    const transaction = db.transaction(['New_transaction'], 'readwrite');
   
-    const budgetObjectStore = transaction.objectStore('new_budget');
+    const budgetObjectStore = transaction.objectStore('New_transaction');
   
     const getAll = budgetObjectStore.getAll();
   
@@ -68,9 +68,9 @@ request.onupgradeneeded = function(event) {
               throw new Error(serverResponse);
             }
   
-            const transaction = db.transaction(['new_budget'], 'readwrite');
+            const transaction = db.transaction(['New_transaction'], 'readwrite');
   
-            const budgetObjectStore = transaction.objectStore('new_budget');
+            const budgetObjectStore = transaction.objectStore('New_transaction');
   
             budgetObjectStore.clear();
   
